@@ -15,11 +15,8 @@ Follow the steps below to install the module
 ## Additional Configuration
 
 ### SSL Configuration
->[!NOTE]
->This is a note that creates a quoted text. It doesn't create the Alert icon.
-
-[!IMPORTANT]
-Using SSL is strongly advised if this module is going to be used in a production environment. 
+>[!IMPORTANT]
+>Using SSL is strongly advised if this module is going to be used in a production environment. 
 
 The steps below will walk you through how to configure MySQL & this module to use SSL. The example below is done in a domain using Active Directory Certificate Services, it will be slightly different if you're are using a different certification authority.
 
