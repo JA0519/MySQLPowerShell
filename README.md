@@ -10,13 +10,13 @@ There are a couple of dependencies that need to be installed before you can use 
 ## Installation
 Follow the steps below to install the module
 1. Download the script and extract the `MySQLPowerShell` folder into one of the PowerShell module locations (These can be found by running `$Env:PSModulePath -split (';')` from within PowerShell)
-2. Open a new PowerShell window and type `Get-Module -ListAvailable`. This will show all of the modules you have installed, within this list should be one titled `MySQL PowerShell`. If so, the module has been installed successfully.
+2. Open a new PowerShell window and type `Get-Module -ListAvailable`. This will show all of the modules you have installed, within this list should be one titled `MySQLPowerShell`. If so, the module has been installed successfully.
 
 ## Additional Configuration
 
 ### SSL Configuration
- [!IMPORTANT]
- Using SSL is strongly advised if this module is going to be used in a production environment. 
+[!IMPORTANT]
+Using SSL is strongly advised if this module is going to be used in a production environment. 
 
 The steps below will walk you through how to configure MySQL & this module to use SSL. The example below is done in a domain using Active Directory Certificate Services, it will be slightly different if you're are using a different certification authority.
 
