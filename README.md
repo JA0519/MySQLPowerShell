@@ -1,5 +1,5 @@
 # MySQL PowerShell
-This module makes it easy to execute MySQL Commands from within PowerShell on Windows systems.
+This module makes it easy to execute MySQL queries from within PowerShell on Windows systems.
 
 ## Dependencies
 There are some dependencies that need to be installed before you can use this module:
