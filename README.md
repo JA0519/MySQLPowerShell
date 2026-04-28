@@ -83,8 +83,8 @@ Once the steps above have been completed, the configuration for SSL in MySQL has
 #### User Permissions
 One suggestion which is recommended to strengthen the security of your MySQL server is to only allows users to authenticate if a valid certificate is present. You can do this by running the below queries on the MySQL server.
 
-- The first command removes the password from the users account.
-- The second command sets the user account so that a certificate is required when logging into the server
+- The first query removes the password from the users account.
+- The second query sets the user account so that a certificate is required when logging into the server
 ```
 ALTER USER 'username'@'%' IDENTIFIED BY '';
 ALTER USER 'username'@'%' REQUIRE X509;
