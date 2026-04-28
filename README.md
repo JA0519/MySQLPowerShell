@@ -2,7 +2,7 @@
 This module makes it easy to execute MySQL Commands from within PowerShell on Windows systems.
 
 ## Dependencies
-There are a couple of dependencies that need to be installed before you can use this module:
+There are some dependencies that need to be installed before you can use this module:
 1. [MySQL .NET Connector](https://dev.mysql.com/downloads/connector/net/)
 2. [Bouncy Castle .NET](https://www.bouncycastle.org/download/bouncy-castle-c/#latest) (You need to extract the BouncyCastle.Cryptography.dll to a location that is accessible by the script)
 3. [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
@@ -82,6 +82,9 @@ Once the steps above have been completed, the configuration for SSL in MySQL has
 ### Suggested MySQL Modifications
 #### User Permissions
 One suggestion which is recommended to strengthen the security of your MySQL server is to only allows users to authenticate if a valid certificate is present. You can do this by running the below queries on the MySQL server.
+
+- The first command removes the password from the users account.
+- The second command sets the user account so that a certificate is required when logging into the server
 ```
 ALTER USER 'username'@'%' IDENTIFIED BY '';
 ALTER USER 'username'@'%' REQUIRE X509;
